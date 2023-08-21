@@ -1,0 +1,43 @@
+## client-side
+
+https://vitejs.dev/guide/
+
+npm create vite@latest . = to install in current folder
+cd client
+npm i react-router-dom axios
+npm i react-hot-toast // https://react-hot-toast.com/
+
+npm i react-cookie
+
+-----------------------------------------------------------------------##
+
+### server-side
+cd server
+npm init -y
+npm i express nodemon dotenv cors
+
+goto package.json then add this script under "script"
+"start": "nodemon index.js" // para hindi na mag type ng nodemon index.js
+to run type : npm start
+
+npm i mongoose
+
+create .env file under the server folder
+
+goto cloudmongo then copy the mongo_url at connect button then paste the password
+
+//https://stackoverflow.com/questions/61302342/mongodb-sets-my-database-to-test-automatically-how-to-change-it
+mongodb+srv://<username>:<password>@cluster0.vbaw8.mongodb.net/<database_name>?retryWrites=true&w=majority
+note: no database name will default to test database name
+
+npm i bcrypt
+
+npm i jsonwebtoken cookie-parser
+
+
+note: if you want to use the es import module
+add "type" : "module"  at package.json below the license 
+e.q. 
+  "author": "",
+  "license": "ISC",
+  "type" : "module", --> here
